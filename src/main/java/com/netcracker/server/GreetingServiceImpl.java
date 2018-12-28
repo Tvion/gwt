@@ -15,15 +15,6 @@ public class GreetingServiceImpl{
 
   @Context
   private ServletContext context;
-//
-//  @POST
-//  @Produces(MediaType.APPLICATION_JSON)
-//  @Consumes(MediaType.APPLICATION_JSON)
-//  public Book greetServer(Book input) throws IllegalArgumentException {
-//    input.setKolStr(input.getKolStr()+100);
-//
-//    return input;
-//  }
 
   @DELETE
   @Produces(MediaType.APPLICATION_JSON)
