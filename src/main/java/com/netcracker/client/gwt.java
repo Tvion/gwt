@@ -60,8 +60,6 @@ public class gwt implements EntryPoint {
             }
         });
 
-//        deleteButton.setStyleName("deleteButton");
-//        addButton.setStyleName("addBookButton");
         deleteButton.setEnabled(false);
         RootPanel.get("deleteContainer").add(deleteButton);
         RootPanel.get("addContainer").add(addButton);
