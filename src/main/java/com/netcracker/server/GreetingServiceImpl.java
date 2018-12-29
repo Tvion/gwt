@@ -20,7 +20,7 @@ public class GreetingServiceImpl{
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.APPLICATION_JSON)
   public Book greetServerDelete(Book input) throws IllegalArgumentException, IOException {
-    String path=context.getRealPath("/WEB-INF/");
+    String path=context.getRealPath("");
     BookService bs=new BookService(path);
     bs.removeBooks(input);
     return input;
@@ -33,7 +33,7 @@ public class GreetingServiceImpl{
   public Book greetServerAdd(Book input) throws IllegalArgumentException, IOException {
 
     input.setDate(System.currentTimeMillis());
-    String path=context.getRealPath("/WEB-INF/");
+    String path=context.getRealPath("");
     BookService bs=new BookService(path);
     bs.addBook(input);
     return input;
