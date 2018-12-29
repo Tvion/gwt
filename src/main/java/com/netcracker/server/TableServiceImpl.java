@@ -21,7 +21,7 @@ public class TableServiceImpl {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.APPLICATION_JSON)
   public List<Book> greetServer() throws IllegalArgumentException, IOException {
-        String path=context.getRealPath("/WEB-INF/");
+        String path=context.getRealPath("");
         BookService bs=new BookService(path);
         return bs.getList();
   }
@@ -31,7 +31,7 @@ public class TableServiceImpl {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public List<Book> sortTable(Integer numCol) throws IllegalArgumentException, IOException {
-        String path=context.getRealPath("/WEB-INF/");
+        String path=context.getRealPath("");
         BookService bs=new BookService(path);
         return bs.getSortedList(numCol);
     }
